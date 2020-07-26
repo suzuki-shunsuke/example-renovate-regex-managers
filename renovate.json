@@ -1,7 +1,7 @@
 {
   "regexManagers": [
     {
-      "fileMatch": ["^\\.github\\/workflows\\/test\\.yml$"],
+      "fileMatch": ["test.yml"],
       "matchStrings": ["tf_version: '(?<currentValue>.*?)'"],
       "depNameTemplate": "hashicorp/terraform",
       "datasourceTemplate": "docker"
