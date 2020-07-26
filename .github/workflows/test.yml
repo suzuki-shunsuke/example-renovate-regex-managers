@@ -2,7 +2,7 @@
 name: CI
 on: [push, pull_request]
 env:
-  tf_version: '0.12.20'
+  tf_version: '0.12.29'
 jobs:
   build:
     runs-on: ubuntu-latest
