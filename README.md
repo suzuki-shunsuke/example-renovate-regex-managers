@@ -1,0 +1,1 @@
+# example-renovate-regex-managers
