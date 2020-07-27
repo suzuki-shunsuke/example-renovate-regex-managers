@@ -23,6 +23,12 @@
       "matchStrings": ["GOLANGCI_VERSION='(?<currentValue>.*?)'"],
       "depNameTemplate": "golangci/golangci-lint",
       "datasourceTemplate": "github-releases"
+    },
+    {
+      "fileMatch": ["ci\\/install-golangci-lint\\.sh"],
+      "matchStrings": ["GOLANGCI_VERSION='(?<currentValue>.*?)'"],
+      "depNameTemplate": "golangci/golangci-lint",
+      "datasourceTemplate": "github-releases"
     }
   ]
 }

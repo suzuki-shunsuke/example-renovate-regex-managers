@@ -7,12 +7,13 @@ workflows:
 jobs:
   setup:
     docker:
-      - image: golang:1.14.4
+      - image: golang:1.14.4-alpine3.11
         environment:
           CGO_ENABLED: "0"
     steps:
-      - checkout
       - run:
           name: Install golangci-lint
           command: |
-            bash ci/install-golangci-lint.sh
+            apk add curl
+            GOLANGCI_VERSION=v1.27.0
+            curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin "$GOLANGCI_VERSION"
