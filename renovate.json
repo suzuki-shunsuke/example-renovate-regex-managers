@@ -14,7 +14,7 @@
     },
     {
       "fileMatch": ["^\\.github/workflows/test\\.yml$"],
-      "matchStrings": ["GOLANGCI_VERSION=(?<currentValue>.*?)"],
+      "matchStrings": ["GOLANGCI_VERSION=(?<currentValue>.*?)\\n"],
       "depNameTemplate": "golangci/golangci-lint",
       "datasourceTemplate": "github-releases"
     },
