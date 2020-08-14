@@ -1,32 +1,8 @@
 {
   "regexManagers": [
     {
-      "fileMatch": ["^\\.github/workflows/test\\.yml$"],
-      "matchStrings": ["tf_version: '(?<currentValue>.*?)'"],
-      "depNameTemplate": "hashicorp/terraform",
-      "datasourceTemplate": "docker"
-    },
-    {
-      "fileMatch": ["^\\.github/workflows/test\\.yml$"],
-      "matchStrings": ["go-version: '(?<currentValue>.*?)'"],
-      "depNameTemplate": "golang",
-      "datasourceTemplate": "docker"
-    },
-    {
-      "fileMatch": ["^\\.github/workflows/test\\.yml$"],
-      "matchStrings": ["GOLANGCI_VERSION=(?<currentValue>.*?)\\n"],
-      "depNameTemplate": "golangci/golangci-lint",
-      "datasourceTemplate": "github-releases"
-    },
-    {
-      "fileMatch": ["\\.circleci/config\\.yml"],
-      "matchStrings": ["GOLANGCI_VERSION='(?<currentValue>.*?)'"],
-      "depNameTemplate": "golangci/golangci-lint",
-      "datasourceTemplate": "github-releases"
-    },
-    {
       "fileMatch": ["ci/install-golangci-lint\\.sh"],
-      "matchStrings": ["GOLANGCI_VERSION='(?<currentValue>.*?)'"],
+      "matchStrings": ["GOLANGCI_VERSION=(?<currentValue>.*?)\\n"],
       "depNameTemplate": "golangci/golangci-lint",
       "datasourceTemplate": "github-releases"
     }
